@@ -1,5 +1,45 @@
-.venv/
-venv/
+# Python cache files
 __pycache__/
-*.pyc
+*.py[cod]
+*$py.class
+
+# Virtual environments
+venv/
+.venv/
+
+# Environment variables / secrets
+.env
+.env.*
+
+# VS Code settings
+.vscode/
+
+# macOS system files
 .DS_Store
+
+# Log files and dumps
+*.log
+*.sqlite3
+*.db
+
+# Unit test cache
+.pytest_cache/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Compiled shared objects
+*.so
+
+# Coverage reports
+htmlcov/
+.coverage
+coverage.xml
+
+# MyPy, Pylint, etc.
+.mypy_cache/
+.pylint.d/
+
+# System junk
+Thumbs.db
+desktop.ini
