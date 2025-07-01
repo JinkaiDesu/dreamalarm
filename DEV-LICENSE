@@ -1,0 +1,24 @@
+DEV LICENSE – DreamOS Development License
+Copyright (C) 2025 Francisco Ruiz
+
+This software module is part of the DreamOS operating system and is currently under 
+active development. As such, this module and its source code are licensed under a 
+temporary proprietary license.
+
+➤ You are permitted to:
+- Use this module for evaluation and testing purposes only.
+- Provide feedback to the DreamOS development team.
+
+➤ You are NOT permitted to:
+- Copy, distribute, sublicense, or modify this software outside the terms of this license.
+- Use it for any commercial purpose.
+- Fork, republish, or incorporate it into other projects.
+
+This license remains in effect until the **entire DreamOS project reaches its 1.0 stable release**, 
+at which point this and other modules will be relicensed under the 
+[GNU Affero General Public License v3.0](./LICENSE).
+
+Until that time, **all rights are reserved**.
+
+If you are a collaborator, you are bound by contributor terms set forth by Francisco Ruiz.
+
