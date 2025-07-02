@@ -43,3 +43,6 @@ coverage.xml
 # System junk
 Thumbs.db
 desktop.ini
+
+# Specific
+creds.json

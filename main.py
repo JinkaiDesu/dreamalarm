@@ -1,9 +1,11 @@
 # === IMPORTS ===
+import os
 import asyncio
 import logging
 import schedule
 import threading
 import gspread
+from dotenv import load_dotenv
 from google.oauth2.service_account import Credentials
 from datetime import datetime, time
 from telegram import Update, Bot
@@ -15,10 +17,13 @@ from telegram.ext import (
     filters
 )
 
+# === Ld Vars ===
+load_dotenv()
+
 # === Sheets Setup ===
 SCOPES = ['https://www.googleapis.com/auth/spreadsheets',
           'https://www.googleapis.com/auth/drive'] # Define the scopes for Google Sheets and Google Drive
-SHEET_NAME = "MY_SHEET_NAME" # TODO: Store Securely
+SHEET_NAME = os.getenv("SHEET_NAME") # Google Sheets Name
 
 # === Login Credentials ===
 creds = Credentials.from_service_account_file(
@@ -27,8 +32,8 @@ client = gspread.authorize(creds) # Authorize the client with the credentials
 sheet = client.open(SHEET_NAME).sheet1 # Open the Google Sheet and select the first sheet
 
 # === CONFIG ===
-BOT_TOKEN = "MY_BOT_TOKEN" # TODO: Store securely, ??? env variable
-YOUR_CHAT_ID = "MY_CHAT_ID"  # TODO: Add support for multiple user's and chat ID's
+BOT_TOKEN = os.getenv("BOT_TOKEN") # Telegram Bot Token (DreamBOT)
+YOUR_CHAT_ID = os.getenv("CHAT_ID")  # TODO: Add support for multiple user's and chat ID's
 ping_interval_minutes = 1 # Notification every 'x' min
 
 # === LOGGING SETUP ===

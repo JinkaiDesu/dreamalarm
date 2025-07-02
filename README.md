@@ -3,7 +3,7 @@
 **STATUS -1**: Built DreamAlarm v0.1 off VPS, Migrated from Replit 
 **CURRENT STATUS**: Migrating Code and continuing dev on VPS
 
-## TODO: Migrate Code and Add Multi-User Support
+## TODO: Test Personal Instance and Add Multi-User Support
 
 ## Licensing
 
@@ -24,9 +24,12 @@ Upon the official release of DreamOS v1.0 (stable), this module will be relicens
 ## 1. v0.1 Created
 
 ## 2. Path to v1
-1. Set up VPS
-2. Migrate Code
-3. Create "keep alive" architecture and Migrate RepeatAlarm logs to google sheet
-4. Add multi-user support
+1. Set up VPS ✅
+2. Dual-Licensing ✅
+3. Migrate Code ✅
+4. Sec Env Vars ✅
+5. Test Personal Instance (Tst Pers Inst)
+6. Create "keep alive" architecture and Migrate RepeatAlarm logs to google sheet
+7. Add multi-user support
 
 # DreamAlarm Design Document
